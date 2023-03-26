@@ -33,18 +33,20 @@
 }
 .flex1 {
     /* flex: 1; */
-    border: 4px dotted rgb(0, 0, 0);
+    /* border: 0.5px dotted rgb(0, 0, 0); */
     height:250px;
-    width:250px;
+    width:300px;
     margin-left: 20px;
+    box-shadow: 5px 5px ;
     /* background-color: rgba(159, 63, 56, 0.878); */
 }
 .flex2{
     /* flex:1; */
-    border: 4px dotted rgb(0, 0, 0);
+    /* border: 0.5px dotted rgb(0, 0, 0); */
     height:250px;
-    width:250px;
+    width:300px;
     margin-right: 20px;
+    box-shadow: 5px 5px ;
     /* background-color: rgba(159, 63, 56, 0.878); */
 }
 .btn {
@@ -114,4 +116,13 @@
     display:flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.margins {
+    padding:10px;
+    margin-top: 50px;
+}
+.changefont {
+    font-size: large;
+    font-weight: 800;
+    color:rgb(29, 29, 62);
 }
