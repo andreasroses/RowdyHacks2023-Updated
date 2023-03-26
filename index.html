@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Phase Match</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body class="moonbackground">
+    <div class="container">
+        <div>
+            <h1 class="header padtop lora">Moonbility</h1>
+            <div class="input1 padtop shadow">
+                <div class="inserttextbox">
+                    <div class="flexhead">
+                        <div class="flex1">
+                            <div>
+                                <label id="infun" class= "changefont lora">Name:</label>
+                                <input id="infun" class="margins" text="name" name="first_name">
+                            </div>
+                            <div>
+                                <label id="infun" class="changefont lora">D.O.B:</label>
+                                <input id="infun" class="margins" type="date" name="dob">
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <img class="moonsize lunarsmall" id="merge" src="lunarphase/waning-gibbous.png">
+                            <div class="overlay">
+                                <div class="MM">
+                                    Merged<br>Moon
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex2">
+                            <div>
+                                <label id="infun" class="changefont lora">Name:</label>
+                                <input id="infun" class="margins" text="name" name="first_name">
+                            </div>
+                            <div>
+                                <label class="changefont lora">D.O.B:</label>
+                                <input class="margins" type="date" name="dob">
+                            </div>
+                        </div>
+                    </div>
+                <div class="btn">
+                    <div>
+                        <button onclick="alert('Your moons are now merging for your compatibility')" class="prettybtn lora" >Check Compatibility </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr class="line"> -->
+        </div>
+        <div class="astroinfo padtop">
+            <h2 class="info lora">Astological Information</h2>
+                <div class="rows">
+                    <div class="shadow conflex margintop">
+                        <div>
+                            <p class=" lora">Capricorn</p>
+                            <ul>
+                                <li>Full-grown adult since age six</li>
+                                <li>The responsible friend</li>
+                                <li>Motivated by duty</li>
+                                <li>It takes a while to warm up to people</li>
+                                <li>Represses any emotion that <br>gets in the way of success</li>
+                            </ul> 
+                        </div>
+                        <div>
+                            <p class="lora">Aquarius </p>
+                            <ul>
+                                <li>Purposefully esoteric</li>
+                                <li>No feelings, just concepts</li>
+                                <li>Actually believes in conspiracy<br> theories</li>
+                                <li>More in love with humanity as<br> a whole than individuals</li>
+                                <li>Fetishizes personal freedom</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow alternate conflex ">
+                        <div>
+                            <p class="lora">Pisces</p>
+                            <ul>
+                                <li>Somehow both 5 and 50<br> years old at once</li>
+                                <li>Thinks everything is a sign</li>
+                                <li>Excessively romantic</li>
+                                <li>Prone to fantasy</li>
+                                <li>No Boundaries</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="lora">Aries</p>
+                            <ul>
+                                <li>No filter</li>
+                                <li>Gets angry, then forgets why<br> they were angry</li>
+                                <li>Will do anything on a dare</li>
+                                <li>Thinks everything is a game<br> they can win</li>
+                                <li>Easily bored</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow conflex margintop">
+                        <div>
+                            <p class="lora">Taurus</p>
+                            <ul>
+                                <li>Just wants to cuddle</li>
+                                <li>Homebody</li>
+                                <li>All or nothing, no in-between</li>
+                                <li>Wears the same outfit everyday</li>
+                                <li>Hates big changes</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="lora">Gemini</p>
+                            <ul>
+                                <li>Charismatic</li>
+                                <li>Uses humor as a crutch</li>
+                                <li>Could talk to a brick wall</li>
+                                <li>Arguments as flirting</li>
+                                <li>Knows a little about every-thing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow alternate conflex ">
+                        <div>
+                            <p class="lora">Cancer</p>
+                            <ul>
+                                <li>Sensitive</li>
+                                <li>Seeks comfort</li>
+                                <li>Forgives but never forgets</li>
+                                <li>Only has one boundary, but <br>it is very firm</li>
+                                <li>Takes on other people's <br>problem</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="lora">Leo</p>
+                            <ul>
+                                <li>Exudes warmth and creat-<br>ivity</li>
+                                <li>A little bit vain</li>
+                                <li>Really big personality</li>
+                                <li>Wants to stand out</li>
+                                <li>Interested in luxury</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow conflex margintop">
+                        <div>
+                            <p class="lora">Virgo</p>
+                            <ul>
+                                <li>Needs to feel useful</li>
+                                <li>Has a quick fix for every-thing</li>
+                                <li>Judgmental, but with good <br>intention</li>
+                                <li>Exceptional spatial aware-ness</li>
+                                <li>A million ideas per second</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="lora">Libra</p>
+                            <ul>
+                                <li>Hates being alone</li>
+                                <li>Really good aesthetics</li>
+                                <li>Conflict avoidant</li>
+                                <li>Sees every side</li>
+                                <li>Can't make decisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow alternate conflex ">
+                        <div>
+                            <p class="lora">Scorpio</p>
+                            <ul>
+                                <li>Primary emotion is betrayal</li>
+                                <li>Looks cool in a leather jacket</li>
+                                <li>OK with uncomfortable silence</li>
+                                <li>Can't be sure if they're serious <br>or joking</li>
+                                <li>Eyes that look into your soul</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="lora">Sagittarius</p>
+                            <ul>
+                                <li>No indoor voice</li>
+                                <li>Forms opinions off of pure <br>emotion</li>
+                                <li>Obsessed with self-improvement</li>
+                                <li>Wields their truth like a blunt <br>weapon</li>
+                                <li>The friendliest person at the <br>party</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- <hr class="line"> -->
+        <div class="phases padtop">
+            <div class="row1">
+                <div>
+                    <img class="moonphases" src="lunarphase/new-moon.png" alt="new-moon">
+                    <p class="centerpara MM">New Moon</p>
+                </div>
+                <div>
+                    <img class="moonphases" src="lunarphase/waxing-crescent.png" alt="waxing-cresent">
+                    <p class="centerpara MM">Waxing-Crescent</p>
+                </div>
+                <div>
+                    <img class="moonphases" src="lunarphase/first-quarter.png" alt="first-quarter">
+                    <p class="centerpara MM">First-Quarter</p>
+                </div>
+                <div>
+                    <img class="moonphases" src="lunarphase/waxing-gibbous.png" alt="waning-gibbous">
+                    <p class="centerpara MM">Waxing-Gibbous</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <img class="moonphases" src="lunarphase/full.png" alt="full-moon">
+                    <p class="centerpara MM">Full-Moon</p>
+                </div>
+                <div>
+                    <img class="moonphases" src="lunarphase/waning-gibbous.png" alt="waning-gibbous">
+                    <p class="centerpara MM">Waning-Gibbous</p>
+                </div>
+                <div>
+                    <img class="moonphases" src="lunarphase/third-quarter.png" alt="third-quarter">
+                    <p class="centerpara MM">Third-Quarter</p>
+                </div>
+                <div>
+                    <img class="moonphases" src="lunarphase/waning-crescent.png" alt="waning-crescent">
+                    <p class="centerpara MM">Waning-Crescent</p>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="line"> -->
+        <div class="whatisthis padtop shadow">
+            <h2 class="header lora"> <br>What is Moonbility?</h2>
+            <p class="test lora" style="font-size: xx-large;">Moonbility will test the compatibility of you and a significant other based on the lunar cycle stage of your births. A full moon will equal max compatibility</p>
+        </div>
+        <!-- <hr class="line"> -->
+        <div class="extra padtop">
+            <p class="extrasmallcredits">Astrological refrence data:https://www.costarastrology.com/zodiac-signs/virgo-sign</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
