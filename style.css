@@ -7,7 +7,7 @@
 }
 .container {
     width: 800px;
-    height: 2000px;
+    height: 4000px;
     margin-left: 300px;
     background-color: rgba(255, 121, 111, 0.888);
     opacity: 0.8;
@@ -59,7 +59,7 @@
 }
 .astroinfo {
     border: 4px dotted white;
-    height:350px;
+    height:1500px;
     width:auto;
     /* background-color:rgb(158, 110, 203); */
 }
@@ -115,3 +115,43 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.test {
+    text-align: center;
+    margin-left:20px;
+    margin-right:20px;
+}
+.info {
+    text-align: center;
+    font-size: xx-large;
+}
+.conflex {
+    height: 230px;
+    width: auto;
+    /* border: 3px solid black; */
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: large;
+}
+.alternate {
+    background-color: rgb(161, 84, 79);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
