@@ -11,14 +11,19 @@ function remove(nuke){
 //     document.getElementById("header").append(textNode);
 // }
 function callFunctions(a,b,c){
-    console.log(a,b,c);
-    getMoonPhase(a,b);
-    getZodiacSign(a,c);
+    if(a.value == null || b.value == null){
+        alert('Missing date!');
+    }
+    else{
+    getMoonPhase(a,c);
+    getMoonPhase(b,c);
+}
+    //getZodiacSign(b,c);
 }
 function getMoonPhase(dob,mppng){
     const data = null;
    // console.log("Moon Phase Requested!");
-    var bDay = input.value;
+    var bDay = dob.value;
    // console.log(bDay);
     var mp;
     const sp = bDay.split("-");
@@ -30,9 +35,8 @@ xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
-        console.log(JSON.parse(this.response).moon_phase);
+       // console.log(JSON.parse(this.response).moon_phase);
 		mp = JSON.parse(this.response).moon_phase;
-        var mppng = document.getElementById('merge');
 console.log("This is MP "+mp);
 if(mp =='First Quarter'){
     mppng.src="lunarphase/first-quarter.png";

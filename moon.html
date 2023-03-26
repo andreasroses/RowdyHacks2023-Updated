@@ -27,7 +27,7 @@
                             </div>
                             <div>
                                 <label id="infun" class="changefont lora">D.O.B:</label>
-                                <input id="infun" class="margins" type="date" name="dob">
+                                <input id="input" class="margins" type="date" name="dob">
                             </div>
                         </div>
                         <div class="wrapper">
@@ -41,17 +41,17 @@
                         <div class="flex2">
                             <div>
                                 <label id="infun" class="changefont lora">Name:</label>
-                                <input id="infun" class="margins" text="name" name="first_name">
+                                <input id="nameID" class="margins" text="name" name="first_name">
                             </div>
                             <div>
                                 <label class="changefont lora">D.O.B:</label>
-                                <input class="margins" type="date" name="dob">
+                                <input class="margins" type="date" name="dob" id="input2">
                             </div>
                         </div>
                     </div>
                 <div class="btn">
                     <div>
-                        <button class="prettybtn lora" onClick="callFunctions(document.getElementById('input'),document.getElementById('merge')),document.getElementById('newText')" id = "infun" type = "submit">Check Compatibility </button>
+                        <button class="prettybtn lora" onClick="callFunctions(document.getElementById('input'),document.getElementById('input2'),document.getElementById('merge'))" id = "infun" type = "submit">Check Compatibility </button>
                         <!-- <button onclick="alert('Your moons are now merging for your compatibility')" class="prettybtn lora" >Check Compatibility </button> -->
                     </div>
                 </div>
