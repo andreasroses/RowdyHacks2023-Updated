@@ -10,13 +10,15 @@ function remove(nuke){
 //     const textNode = document.createTextNode(getZodiacSign(dob));
 //     document.getElementById("header").append(textNode);
 // }
-function callFunctions(a,b,c){
+function callFunctions(a,b,c,d){
     if(a.value == null || b.value == null){
         alert('Missing date!');
     }
     else{
     getMoonPhase(a,c);
     getMoonPhase(b,c);
+    getZodiacSign(a,d);
+    getZodiacSign(b,d);
 }
     //getZodiacSign(b,c);
 }
@@ -75,8 +77,7 @@ xhr.setRequestHeader("X-RapidAPI-Host", "moon-calendar.p.rapidapi.com");
 xhr.send(data);
 }
 
-function getZodiacSign(input,txtBox){
-    getMoonPhase(input);
+function getZodiacSign(input){
     console.log("Zodiac Sign Requested!");
     var bDay = input.value;
     console.log(bDay);
@@ -96,7 +97,6 @@ function getZodiacSign(input,txtBox){
 
 fetch(date, options)
 .then(response => response.json())
-.then(txtBox.innerHTML = response)
-	  //  .catch(err => console.error(err));
-
+.then(data => console.log(data.zodiacSign.name))
+.catch(err => console.error(err));
 }
