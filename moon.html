@@ -14,11 +14,11 @@
 </head>
 
 <body class="moonbackground">
-    <div class="container">
+    <div class="container" >
         <div>
-            <h1 class="header padtop lora">Moonbility</h1>
+            <h1 class="header padtop lora" id = "header">Moonbility</h1>
             <div class="input1 padtop shadow">
-                <div class="flexhead">
+                <div class="flexhead" id = "hacker">
                     <div class="flex1">
                         <div>
                             <label class= "changefont lora">Name:</label>
@@ -26,8 +26,8 @@
                             </div>
                             <div>
                             <label class="changefont lora">D.O.B:</label>
-                            <input class="margins" type="date" name="dob">
-                        </div>
+                            <input class="margins" type="date" name="dob" id = "input">
+                            </div>
                     </div>
                     <div class="flex2">
                         <div>
@@ -38,11 +38,12 @@
                             <label class="changefont lora">D.O.B:</label>
                             <input class="margins" type="date" name="dob">
                         </div>
+                        <label text = "/br" id = "newText"></label>
                     </div>
                 </div>
                 <div class="btn">
                     <div>
-                        <button class="prettybtn lora" >Check Compatibility </button>
+                        <button class="prettybtn lora" onClick="callFunctions(document.getElementById('input'),document.getElementById('merge')),document.getElementById('newText')" id = "infun" type = "submit">Check Compatibility </button>
                     </div>
                 </div>
             </div>
