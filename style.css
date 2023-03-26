@@ -6,8 +6,8 @@
     background-attachment: fixed;
 }
 .container {
-    width: 800px;
-    height: 2000px;
+    margin-right:300px;
+    height: 3100px;
     margin-left: 300px;
     background-color: rgba(255, 121, 111, 0.888);
     opacity: 0.8;
@@ -15,7 +15,6 @@
 .header {
     text-align: center;
     font-size: 50px;  
-    font-family: 'Lora', serif;
 }
 .input1 {
     /* border: 4px solid white; */
@@ -33,18 +32,20 @@
 }
 .flex1 {
     /* flex: 1; */
-    border: 4px dotted rgb(0, 0, 0);
+    /* border: 0.5px dotted rgb(0, 0, 0); */
     height:250px;
-    width:250px;
+    width:300px;
     margin-left: 20px;
+    box-shadow: 5px 5px ;
     /* background-color: rgba(159, 63, 56, 0.878); */
 }
 .flex2{
     /* flex:1; */
-    border: 4px dotted rgb(0, 0, 0);
+    /* border: 0.5px dotted rgb(0, 0, 0); */
     height:250px;
-    width:250px;
+    width:300px;
     margin-right: 20px;
+    box-shadow: 5px 5px ;
     /* background-color: rgba(159, 63, 56, 0.878); */
 }
 .btn {
@@ -58,26 +59,26 @@
     color: white;
 }
 .astroinfo {
-    border: 4px dotted white;
-    height:350px;
+    /* border: 4px dotted white; */
+    height:1500px;
     width:auto;
     /* background-color:rgb(158, 110, 203); */
 }
 .phases {
-    border: 4px solid white;
+    /* border: 4px solid white; */
     height:350px;
     width:auto;
     /* background-color:rgb(158, 110, 203); */
 }
 .whatisthis{
-    border: 4px dotted white;
+    /* border: 4px dotted white; */
     height:350px;
     width:auto;
     /* background-color:rgb(158, 110, 203); */
 }
 .extra {
-    border: 4px solid white;
-    height:350px;
+    /* border: 4px solid white; */
+    height:250px;
     width:auto;
     /* background-color:rgb(158, 110, 203); */
 }
@@ -87,19 +88,9 @@
 }
 .line {
     height: 1px;
-    background-color: white;
+    /* background-color: white; */
     margin-left:20px;
     margin-right:20px;
-}
-.tunarose {
-    position:relative;
-    bottom: 400;
-    right: 0px;
-    width: 80px;
-    border: 3px solid #73AD21;
-    /* align-content: center;
-    position: static;
-    border: 3px solid #73AD21; */
 }
 .moonphases {
     height: 120px;
@@ -107,10 +98,72 @@
 .row1 {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 .row2 {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+.margins {
+    padding:10px;
+    margin-top: 50px;
+    margin-left:15px;
+    background-color:rgb(35, 35, 52);
+    color: white;
+}
+.changefont {
+    font-size: large;
+    font-weight: 800;
+    color:rgb(26, 26, 44);
+}
+.test {
+    text-align: center;
+    margin-left:20px;
+    margin-right:20px;
+}
+.info {
+    text-align: center;
+    font-size: xx-large;
+}
+.conflex {
+    height: 230px;
+    width: auto;
+    /* border: 3px solid black; */
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: large;
+}
+.alternate {
+    background-color: rgb(161, 84, 79);
+}
+.lora {
+    font-family: 'Lora', serif;
+}
+.extrasmallcredits{
+    font-size: x-small;
+}
+.whatisthis {
+    background-color: rgb(161, 84, 79);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
