@@ -139,6 +139,8 @@
 }
 .alternate {
     background-color: rgb(161, 84, 79);
+    margin-top: 5px;
+    
 }
 .lora {
     font-family: 'Lora', serif;
@@ -153,3 +155,27 @@
 .aligncredits {
     text-align: center;
 }
+.shadow {
+    box-shadow: 5PX 5PX rgba(43, 41, 40, 0.875);
+}
+.margintop {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
