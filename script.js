@@ -2,14 +2,19 @@ function hover(img)
 {
     img.src = "2.jpg"
 }
+function getOutputDate(dateobj){
+    var date = new Date();
+    var dateobj = date.toISOString().substring(0,10);
+    document.getElementById('dateobj').value = dateobj;
+    return dateobj;
+}
 
 function getMoonPhase(dob){
+    const bday = document.getElementById('dob').value;
     const data = null;
     var mp;
-    const sp = dob.split("/");
+    const sp = bday.split("/");
     const bob = sp[2]+"-"+sp[0]+"-"+sp[1];
-    console.log(bob);
-    console.log(sp);
     var date = "https://moon-calendar.p.rapidapi.com/moon_phase?date=";
     date = date.concat(bob);
 const xhr = new XMLHttpRequest();
@@ -58,10 +63,11 @@ return mp;
 }
 
 function getZodiacSign(dob){
+    const bday = document.getElementById('dob').value;
     const data = null;
     var final;
     var date = "https://horoskopos.p.rapidapi.com/zodiac-signs/search?day=";
-    const sp = dob.split("/");
+    const sp = bday.split("/");
     const bob = sp[2]+"-"+sp[0]+"-"+sp[1];
     console.log(bob);
     console.log(sp);
