@@ -139,6 +139,8 @@
 }
 .alternate {
     background-color: rgb(161, 84, 79);
+    margin-top: 5px;
+    
 }
 .lora {
     font-family: 'Lora', serif;
@@ -148,6 +150,12 @@
 }
 .whatisthis {
     background-color: rgb(161, 84, 79);
+}
+.shadow {
+    box-shadow: 5PX 5PX rgba(43, 41, 40, 0.875);
+}
+.margintop {
+    margin-top: 10px;
 }
 
 
