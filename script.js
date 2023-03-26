@@ -11,8 +11,8 @@ function remove(nuke){
 //     document.getElementById("header").append(textNode);
 // }
 function callFunctions(a,b,c){
-    if(a.value == null || b.value == null){
-        alert('Missing date!');
+    if(!a.value || !b.value){
+        window.alert('Missing date!');
     }
     else{
     getMoonPhase(a,c);
@@ -24,7 +24,8 @@ function getMoonPhase(dob,mppng){
     const data = null;
    // console.log("Moon Phase Requested!");
     var bDay = dob.value;
-   // console.log(bDay);
+   console.log('dob',dob);
+   document.getElementById(dob.id).parentNode.parentNode.innerHTML='Aeries'; //visibility = 'hidden';
     var mp;
     const sp = bDay.split("-");
     const bob = sp[0]+"-"+sp[1]+"-"+sp[2];
