@@ -17,8 +17,8 @@ function callFunctions(a,b,c){
     else{
     getMoonPhase(a,c);
     getMoonPhase(b,c);
-    getZodiacSign(a,d);
-    getZodiacSign(b,d);
+    getZodiacSign(a);
+    getZodiacSign(b);
 }
     //getZodiacSign(b,c);
 }
@@ -27,7 +27,7 @@ function getMoonPhase(dob,mppng){
    // console.log("Moon Phase Requested!");
     var bDay = dob.value;
    console.log('dob',dob);
-   document.getElementById(dob.id).parentNode.parentNode.innerHTML='Aeries'; //visibility = 'hidden';
+   //document.getElementById(dob.id).parentNode.parentNode.innerHTML=''; //visibility = 'hidden';
     var mp;
     const sp = bDay.split("-");
     const bob = sp[0]+"-"+sp[1]+"-"+sp[2];
@@ -98,6 +98,6 @@ function getZodiacSign(input){
 
 fetch(date, options)
 .then(response => response.json())
-.then(data => console.log(data.zodiacSign.name))
+.then(data => {console.log(data.zodiacSign.name);  document.getElementById(input.id).parentNode.parentNode.innerHTML="Zodiac Sign: " + data.zodiacSign.name;})
 .catch(err => console.error(err));
 }
