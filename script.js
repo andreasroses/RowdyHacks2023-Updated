@@ -31,20 +31,21 @@ function getMoonPhase(dob, id) {
     var mppng;
     fetch(date,{ mode: 'no-cors' })
         .then(response => {
-            if (response.ok) {
-                return response.json(); // Parse the response data as JSON
+            if (response.ok || response.type === 'opaque') {
+                return response.text(); // Parse the response data as JSON
             } else {
                 throw new Error('API request failed');
             }
         })
         .then(data => {
             // Process the response data here
+            const mpData = JSON.parse(data);
             console.log(data);
-            if (data.hasOwnProperty('curphase')) {
-                mp = data.curphase;
+            if (mpData.hasOwnProperty('curphase')) {
+                mp = mpData.curphase;
             }
             else {
-                mp = data.closestphase.phase;
+                mp = mpData.closestphase.phase;
             }
             console.log("This is MP " + mp);
             if (mp == 'First Quarter') {
@@ -54,7 +55,6 @@ function getMoonPhase(dob, id) {
                 mppng = "lunarphase/full.png";
             }
             if (mp == 'New Moon') {
-                console.log("true");
                 mppng = 'lunarphase/new-moon.png';
             }
             if (mp == 'Last Quarter') {
