@@ -29,22 +29,13 @@ function getMoonPhase(dob, id) {
     var mp;
     var date = "https://aa.usno.navy.mil/api/rstt/oneday?date=" + bDay + "&coords=40.927643, -98.338205";
     var mppng;
-    fetch(date,{ mode: 'no-cors' })
+    const mpData = 0;
+    axios.get(date)
         .then(response => {
-            if (response.ok || response.type === 'opaque') {
-                return response.text(); // Parse the response data as JSON
-            } else {
-                throw new Error('API request failed with status: ' + response.status);
-            }
-        })
-        .then(data => {
-            if (!data) {
-                throw new Error('Empty response from the API');
-              }
-            try{
-            // Process the response data here
-            const mpData = JSON.parse(data);
-            console.log(data);
+            if (response.status === 200) {
+                mpData = response.data;
+                // Process the response data here
+            //console.log(data);
             if (mpData.hasOwnProperty('curphase')) {
                 mp = mpData.curphase;
             }
@@ -80,11 +71,10 @@ function getMoonPhase(dob, id) {
             console.log(mp);
             const moonImg = document.getElementById(id);
             moonImg.src = mppng;
-        }
-        catch (error) {
-            // Handle JSON parsing error
-            console.error('Error parsing JSON data:', error);
-          }
+        
+            } else {
+                throw new Error('API request failed with status: ' + response.status);
+            }
         })
         .catch(error => {
             // Handle any errors here
