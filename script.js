@@ -34,10 +34,14 @@ function getMoonPhase(dob, id) {
             if (response.ok || response.type === 'opaque') {
                 return response.text(); // Parse the response data as JSON
             } else {
-                throw new Error('API request failed');
+                throw new Error('API request failed with status: ' + response.status);
             }
         })
         .then(data => {
+            if (!data) {
+                throw new Error('Empty response from the API');
+              }
+            try{
             // Process the response data here
             const mpData = JSON.parse(data);
             console.log(data);
@@ -76,6 +80,11 @@ function getMoonPhase(dob, id) {
             console.log(mp);
             const moonImg = document.getElementById(id);
             moonImg.src = mppng;
+        }
+        catch (error) {
+            // Handle JSON parsing error
+            console.error('Error parsing JSON data:', error);
+          }
         })
         .catch(error => {
             // Handle any errors here
