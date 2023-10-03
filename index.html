@@ -27,11 +27,12 @@
                             </div>
                             <div>
                                 <label id="infun" class="changefont lora">D.O.B:</label>
-                                <input id="infun" class="margins" type="date" name="dob">
+                                <input id="input1" class="margins" type="date" name="dob">
                             </div>
                         </div>
                         <div class="wrapper">
-                            <img class="moonsize lunarsmall" id="merge" src="lunarphase/waning-gibbous.png">
+                            <img class="moonsize lunarsmall" id="merge1" src="lunarphase/waning-gibbous.png">
+                            <img class="moonsize lunarsmall" id="merge2" src="lunarphase/waning-gibbous.png">
                             <div class="overlay">
                                 <div class="MM">
                                     Merged<br>Moon
@@ -45,13 +46,13 @@
                             </div>
                             <div>
                                 <label class="changefont lora">D.O.B:</label>
-                                <input class="margins" type="date" name="dob">
+                                <input id="input2" class="margins" type="date" name="dob">
                             </div>
                         </div>
                     </div>
                 <div class="btn">
                     <div>
-                        <button onclick="alert('Your moons are now merging for your compatibility')" class="prettybtn lora" >Check Compatibility </button>
+                        <button class="prettybtn lora" onclick="callFunctions(document.getElementById('input1'),document.getElementById('input2'),document.getElementById('merge1'),document.getElementById('merge2'))" id = "infun" type = "submit">Check Compatibility </button>
                     </div>
                 </div>
             </div>
