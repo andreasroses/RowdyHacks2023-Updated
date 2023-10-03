@@ -29,7 +29,7 @@ function getMoonPhase(dob, id) {
     var mp;
     var date = "https://aa.usno.navy.mil/api/rstt/oneday?date=" + bDay + "&coords=40.927643, -98.338205";
     var mppng;
-    fetch(date)
+    fetch(date,{ mode: 'no-cors' })
         .then(response => {
             if (response.ok) {
                 return response.json(); // Parse the response data as JSON
